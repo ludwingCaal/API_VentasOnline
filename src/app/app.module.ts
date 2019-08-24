@@ -10,6 +10,8 @@ import { CategoriasComponent } from './components/categorias/categorias.componen
 import { TipoEmpaquesComponent } from './components/tipo-empaques/tipo-empaques.component';
 import { APP_ROUTING } from "./app.routes";
 
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { APP_ROUTING } from "./app.routes";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    HttpClientModule,
+    //AppRoutingModule,
     APP_ROUTING
   ],
   providers: [],
