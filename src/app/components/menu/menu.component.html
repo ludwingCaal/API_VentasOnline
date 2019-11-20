@@ -5,6 +5,7 @@
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<<<<<<< HEAD
       <ul *ngIf="authService.isAuthenticated()" class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -24,11 +25,27 @@
             <a class="dropdown-item" [routerLink]="['inventarios']">Inventarios</a>
             <a class="dropdown-item" [routerLink]="['productos']">Productos</a>
             <a class="dropdown-item" [routerLink]="['proveedores']">Proveedores</a>
+=======
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Rutas
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['categorias']">Categorias</a>
+>>>>>>> 24c460a5487adcdc9ee8c8454717fdfdcba845b9
             <a class="dropdown-item" [routerLink]="['tipoEmpaques']">Tipo De Empaques</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </li>
+<<<<<<< HEAD
       </ul>
       <ul class="navbar-nav navbar-right">
         <li *ngIf="!authService. isAuthenticated()"><a [routerLink]="['/login']" class="btn btn-outline-primary">Sign In</a></li>
@@ -41,3 +58,15 @@
       </ul>
    </div>
 </nav>
+=======
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+>>>>>>> 24c460a5487adcdc9ee8c8454717fdfdcba845b9

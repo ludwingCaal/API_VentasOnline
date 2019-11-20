@@ -1,5 +1,6 @@
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./components/home/home.component";
+<<<<<<< HEAD
 import { LoginComponent } from "./components/login/login.component";
 import { CategoriasComponent } from "./components/categorias/categorias.component";
 import { ClientesComponent } from "./components/clientes/clientes.component";
@@ -31,6 +32,15 @@ const APP_ROUTES: Routes=[
     {path:'proveedores', component:ProveedoresComponent},
     {path:'tipoEmpaques', component:TipoEmpaquesComponent, canActivate:[AuthguardGuard]},
     {path:'categoriaCreacion', component:CategoriaFormComponent, canActivate:[AuthguardGuard]},
+=======
+import { CategoriasComponent } from "./components/categorias/categorias.component";
+import { TipoEmpaquesComponent } from "./components/tipo-empaques/tipo-empaques.component";
+
+const APP_ROUTES: Routes=[
+    {path:'home', component:HomeComponent},
+    {path:'categorias', component:CategoriasComponent},
+    {path:'tipoEmpaques', component:TipoEmpaquesComponent},
+>>>>>>> 24c460a5487adcdc9ee8c8454717fdfdcba845b9
     {path:'home', pathMatch:'full', redirectTo:'home'}
 ];
 

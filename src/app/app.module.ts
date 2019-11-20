@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
 import { TipoEmpaquesComponent } from './components/tipo-empaques/tipo-empaques.component';
+<<<<<<< HEAD
 import { APP_ROUTING } from './app.routes';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
@@ -29,6 +30,11 @@ import { EmailProveedorComponent } from './components/email-proveedor/email-prov
 import { TelefonoClienteComponent } from './components/telefono-cliente/telefono-cliente.component';
 import { CategoriaFormComponent } from './components/categorias/categoria-form/categoria-form.component';
 
+=======
+import { APP_ROUTING } from "./app.routes";
+
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+>>>>>>> 24c460a5487adcdc9ee8c8454717fdfdcba845b9
 
 @NgModule({
   declarations: [
@@ -37,6 +43,7 @@ import { CategoriaFormComponent } from './components/categorias/categoria-form/c
     FooterComponent,
     HomeComponent,
     CategoriasComponent,
+<<<<<<< HEAD
     TipoEmpaquesComponent,
     LoginComponent,
     ClientesComponent,
@@ -65,6 +72,17 @@ import { CategoriaFormComponent } from './components/categorias/categoria-form/c
     {provide:HTTP_INTERCEPTORS, useClass:TokenInterceptor,multi:true},
     {provide:HTTP_INTERCEPTORS, useClass:AuthInterceptor,multi:true}
   ],
+=======
+    TipoEmpaquesComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    //AppRoutingModule,
+    APP_ROUTING
+  ],
+  providers: [],
+>>>>>>> 24c460a5487adcdc9ee8c8454717fdfdcba845b9
   bootstrap: [AppComponent]
 })
 export class AppModule { }

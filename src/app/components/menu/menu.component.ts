@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { AuthService } from "./../login/services/auth.service";
 import { Router } from "@angular/router";
 import swal from "sweetalert2";
+=======
+>>>>>>> 24c460a5487adcdc9ee8c8454717fdfdcba845b9
 
 @Component({
   selector: 'app-menu',
@@ -10,6 +13,7 @@ import swal from "sweetalert2";
 })
 export class MenuComponent implements OnInit {
 
+<<<<<<< HEAD
   constructor( private authService:AuthService, private router:Router) {
    }
 
@@ -22,4 +26,11 @@ export class MenuComponent implements OnInit {
     this.router.navigate(['/login']);
 
   }
+=======
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+>>>>>>> 24c460a5487adcdc9ee8c8454717fdfdcba845b9
 }
