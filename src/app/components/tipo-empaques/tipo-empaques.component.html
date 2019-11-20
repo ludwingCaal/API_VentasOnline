@@ -1,0 +1,18 @@
+<div class="card border-primary mb-3">
+    <div class="card-header">Tipos de Empaques</div>
+    <div class="card-body text-primary">
+        <h5 class="card-title">Listado de Tipos de Empaques</h5>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let tipoempaques of tipoEmpaques">
+                    <td>{{tipoempaques.descripcion}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
